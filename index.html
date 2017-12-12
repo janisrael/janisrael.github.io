@@ -60,9 +60,9 @@
         <div id="app" class="slide-header-content">
   
 <div id="my_view">
-    <h1> {{ data.records.description}}</h1>
-    {{ data.data.url}}
-<!--    <img src="{{ data.data.task_screenshots}}"> -->
+    <h1> {{ data.data[0].name }}</h1>
+    {{ data.data[0].url }}
+   <img src="{{ data.data[0].screenshot }}">
 
 </div>
 
