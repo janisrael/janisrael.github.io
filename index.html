@@ -51,7 +51,9 @@
         <script src="assets/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.7/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.13/vue-resource.min.js"></script>
-
+<?php 
+header("Access-Control-Allow-Origin: https://janisrael.github.io/"); 
+?>
     </head>
 
     <body>
@@ -62,7 +64,7 @@
 <div id="my_view">
     <h1> {{ data.data[0].name }}</h1>
     {{ data.data[0].url }}
-   <img src="{{ data.data[0].screenshot }}">
+<!--    <img src="{{ data.data[0].screenshot }}"> -->
 
 </div>
 
