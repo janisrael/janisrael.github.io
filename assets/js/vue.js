@@ -4,7 +4,7 @@ var my_view = new Vue({
     ready: function() {
 
         // GET request
-        this.$http.get('http://127.0.0.1:8000/api/task/1', function (data) {
+        this.$http.get('http://digitaliron.com/jan_tools/janisrael.github.io/my-rest-api/department/read.php', function (data) {
             // set data on vm
             this.$set('data', data)
 
